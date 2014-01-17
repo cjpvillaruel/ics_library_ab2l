@@ -3,10 +3,9 @@
 /**
  * Includes the User_Model class as well as the required sub-classes
  * @package codeigniter.application.models
-  *	reference: http://www.revillweb.com/tutorials/codeigniter-tutorial-learn-codeigniter-in-40-minutes/
  */
 
-class User_Model extends CI_Model
+class Admin_Model extends CI_Model
 {
 	/*
 	* A private variable to represent each column in the database
@@ -101,7 +100,7 @@ class User_Model extends CI_Model
 
 		//create query to connect user login database
         $this->db->select('username, password');
-        $this->db->from('user_account');
+        $this->db->from('admin_account');
         $this->db->where('username', $username);
         $this->db->where('password', sha1($password));
         $this->db->limit(1);
