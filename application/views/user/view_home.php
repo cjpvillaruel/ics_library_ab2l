@@ -1,10 +1,13 @@
-<!-- view for the administrator's homepage after logging in -->
+<!-- view for the user's homepage after logging in -->
 
 <html>
 
 <body>
-HIII!
+<div>
+	<p>Home page!</p>
+</div>
 
+<a href= "controller_home/viewProfile">View Profile</a>
 <a href= "controller_home/logout">Logout</a>
 </body>
-<html>
+</html>

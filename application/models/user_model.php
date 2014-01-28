@@ -91,6 +91,13 @@ class User_Model extends CI_Model
 	* Class Methods
 	*/
 
+
+	//gets the current user's information using the username and returns the row
+	function getUserInfo($username){
+	$query = $this->db->query("SELECT * FROM user_account WHERE username = '$username'");
+	return $query->result();
+	}
+
 	
 	public function login($username, $password)
 	{
