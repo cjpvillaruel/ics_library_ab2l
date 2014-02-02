@@ -38,8 +38,8 @@
 |
 */
 
-//$route['default_controller'] = "admin/controller_admin_login";
-$route['default_controller'] = "user/controller_login";
+$route['default_controller'] = "admin/controller_admin_login";
+//$route['default_controller'] = "user/controller_register";
 
 
 $route['404_override'] = '';
